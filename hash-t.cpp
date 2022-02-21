@@ -176,32 +176,32 @@ private:
     Equal equal;
 };
 
-//int main() {
-//    HashSet<string> set;
-//    std::string  key;
-//    char operation = '\0';
-//    while(std::cin >> operation >> key) {
-//        bool res = false;
-//        switch (operation) {
-//            case '+':
-//                res = set.add(key);
-//                break;
-//            case '?':
-//                res = set.has(key);
-//                break;
-//            case '-':
-//                res = set.del(key);
-//                break;
-//            default:
-//                break;
-//        }
-//
-//        if (res) {
-//            std:: cout << "OK" << std::endl;
-//        }
-//        else {
-//            std::cout << "FAIL" << std::endl;
-//        };
-//    }
-//    return  0;
-//}
+int main() {
+    HashSet<string> set;
+    std::string  key;
+    char operation = '\0';
+    while(std::cin >> operation >> key) {
+        bool res = false;
+        switch (operation) {
+            case '+':
+                res = set.add(key);
+               break;
+            case '?':
+                res = set.has(key);
+                break;
+            case '-':
+                res = set.del(key);
+                break;
+            default:
+                break;
+        }
+
+        if (res) {
+            std:: cout << "OK" << std::endl;
+        }
+        else {
+            std::cout << "FAIL" << std::endl;
+        };
+    }
+    return  0;
+}
